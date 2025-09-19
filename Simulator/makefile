@@ -10,7 +10,7 @@ LIB_FLAG = $(COMP_PATH)/lib/Comp.so
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-	$(CC) -o $(TARGET) $(SRC) $(INC_FLAG) $(LIB_FLAG) -Wl,-rpath,/home/secureomen/PINLab/Component/lib
+	$(CC) -o $(TARGET) $(SRC) $(INC_FLAG) $(LIB_FLAG) -Wl,-rpath,'$ORIGIN/../../Component/lib'
 
 clean:
 	rm -f ./bin/*
